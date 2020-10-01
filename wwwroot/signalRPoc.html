@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>EAIS-Client commuinication by SignalR</title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <header class="row">
+            <div class="row">
+                    <h2 style="margin-left: 10%">signalR Demo</h2>
+            </div>
+        </header>
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <button id="submitLiveEngagmentReport" type="submit" class="btn btn-primary">
+                        Get full Engagment Report
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <h3>Or:</h3>
+            </div>
+
+
+
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <label htmlFor="firstInsight">Attribute 1</label>
+                    <input type="text"
+                           id="firstInsight"
+                           class="form-control"
+                           value="" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label htmlFor="secondInsight">Attribute 2</label>
+                    <input type="text"
+                           id="secondInsight"
+                           class="form-control"
+                           value="" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <button id="submitSpecificTypes" type="submit" class="btn btn-primary">
+                        Get Engagment Report Specified Attributes.
+                    </button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-5">
+                    <h4>Particpants</h4>
+                </div>
+                <div class="form-group col-md-5">
+                    <h4>RaisedHands</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-5">
+                    <textarea id="particpantsCnt"></textarea>
+                </div>
+                <div class="form-group col-md-5">
+                    <textarea id="raiseHandsCnt"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-5">
+                    <h4>Particpants</h4>
+                </div>
+                <div class="form-group col-md-5">
+                    <h4>RaisedHands</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-5">
+                    <button id="stopParticpants" type="submit" class="btn btn-primary">
+                        Stop Fetch Particpants Data.
+                    </button>
+                </div>
+                <div class="form-group col-md-5">
+                    <button id="stopRaisedHands" type="submit" class="btn btn-primary">
+                        Stop Fetch Raised Hands Data.
+                    </button>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-7">
+                    <img height="200" src="signal-r.png" alt="logo" />
+                </div>
+            </div>
+            <div class="row">
+                <button id="stopConnectionByServer" type="submit" class="btn btn-primary" style="margin-left: 25%">
+                    Stop Connection By Server.
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="signalr.js"></script>
+    <script src="clientSide.js"></script>
+</body>
+</html>
